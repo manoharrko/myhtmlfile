@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+:root {
+	--primary: #000;
+	--secondary: orange;
+	--font-size1: 24px;
+}
+body {
+	box-sizing: border-box;
+	font-family: Raleway, sans-serif;
+	padding: 0px;
+	margin: 0px;
+}
+button {
+	background-color: var(--primary);
+	color: white;
+	padding: 20px 50px;
+	border-radius: 40px;
+	transition: all 1s ease;
+}
+button:hover {
+	background-color: var(--secondary);
+	color: black;
+}
+p {
+	font-size: var(--font-size1);
+	text-align: justify;
+}
+
+
+
+/* header css starts here*/
+.logo{
+	background-color: transparent;
+	color: transparent;
+}
+.menu{
+	background-color: transparent;
+	color: transparent;
+	height: 70;
+	width: auto;
+}
+header {
+	background-color: black;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 100px;
+	padding-top: 20px;
+}
+
+header ul {
+	display: flex;
+	gap: 10px;
+}
+ul li {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+a:hover {
+	color: var(--secondary);
+}
+
+section {
+	padding: 100px 100px;
+}
+/* header css ends here */
+
+
+
+/* banner css starts here*/
+#banner {
+	scroll-behavior: smooth;
+	display: flex;
+	padding-top: 0%;
+	gap: 30px;
+    max-width: auto;
+	justify-content: space-between;
+	 /* animation: basic 2s ease infinite;  */
+   overflow-x: hidden;
+}
+.slides
+{
+    /* display: flex; */
+    gap: 30px;
+    flex-basis: 140px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    text-overflow: hidden;
+}
+@keyframes basic {
+	100% {
+		
+			transform: translateX(-1400px);
+	}
+}
+
+#banner p {
+	line-height: 1.5;
+}
+.right{
+	width: 100%;
+	height: 100%;
+    padding: 20px;
+	margin: 10px;
+	justify-items: center;
+	justify-content: center;
+	align-items: center;
+}
+.left{
+	width: 100%;
+	height: 100%;
+    padding: 0px;
+	margin: 0px;
+	justify-content: center;
+	align-items: center;
+}
+.buttons {
+	display: flex;
+	gap: 20px;
+	font-size: 20px;
+}
+.buttons:nth-child(2) {
+	background-color: white;
+}
+
+
+/* banner css ends here */
+/* about starts*/
+#about{
+    text-align: center;
+	scroll-behavior: smooth;
+}
+ h2{
+    font-size: 46px;
+    margin-top: 0px;
+    padding-top: 0px;
+    text-shadow: 3px 5px var(--secondary);
+    text-align: center;
+}
+#about p{
+    text-align: center;
+}
+/* projects starts*/
+#projects
+{
+	scroll-behavior: smooth;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 20px;
+}
+.card
+{
+    box-shadow: 10px 10px black;
+    padding: 30px;
+    border-radius: 20px;
+    transition: all 1s ease;
+
+}
+.card img
+{
+    width: 100%;
+
+}
+.card:hover{
+ box-shadow: 10px 10px var(--secondary);  
+ scale: 1.05; 
+}
+
+/* about ends*/
+
+
+
+
+
+/* mobile css*/
+
+@media (max-width: 768px) {
+	header {
+		flex-direction: column;
+		align-items: center;
+	}
+    #banner
+    {
+		scroll-behavior: smooth;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    #banner .left{
+        width: 100%;
+    }
+    #banner img{
+     width:100%;
+     
+    }
+    .buttons{
+        justify-content: center;
+    }
+    #projects{
+        grid-template-columns: repeat(1,auto);
+    }
+}
+/* footer css starts here*/
+
+footer {
+	scroll-behavior: smooth;
+	height: 200px;
+	background-color: black;
+	color: white;
+	/* display: flex; */
+	justify-content: space-between;
+	padding: 30px 100px;
+}
+
+footer ul {
+	display: flex;
+	gap: 10px;
+	padding: 0px;
+}
+ul li {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+a:hover {
+	color: var(--secondary);
+}
+
+section {
+
+	padding: 100px 100px;
+}
+.socialadd1{
+	font-size: 15px;
+}
+.socialadd2{
+	font-size: 30px;
+}
+
+
+.container {
+	display: grid;
+	align-items: center; 
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 5px;
+   }
+   
+   img {
+	 max-width: 100%;
+	 max-height:100%;
+	 background-color: black;
+   }
+   
+   .text {
+	 font-size: 10px;
+   }
+   .line{
+	width: 1400px;
+	height: 0px;
+   }
+   .addresss{
+	height: 10px;width: auto;
+	color: blue;
+	font-size: 20px;
+	background-color: #fb4d62;
+   }
+
+   .socialitems{
+	align-items: stretch;
+}
+
+   /* mobile css*/
+
+@media (max-width: 768px) {
+	.footer {
+		flex-direction: column;
+		align-items: center;
+	}
+    /* #banner
+    {
+		scroll-behavior: smooth;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    #banner .left{
+        width: 100%;
+    }
+    #banner img{
+     width:100%; */
+     
+    /* } */
+	.socialitems{
+		align-items: stretch;
+		grid-template-columns: repeat(1,auto);
+	flex-direction: column;
+	}
+}
+/* footer css ends here */

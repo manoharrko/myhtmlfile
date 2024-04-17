@@ -1,0 +1,44 @@
+.headerclass{
+    font-style: italic;
+    color: #E50914;
+    background-color: transparent;
+    font-size: 300%;
+    text-align: start;
+    margin-left: 11%;
+    
+}
+.footerid{
+    font-style: italic;
+    color: #E50914;
+    background-color: transparent;
+    /* font-size: 300%;
+    text-align: start;
+    margin-left: 11%; */
+    
+}
+div{
+    color: #E50914;
+    /* background-color: #020101; */
+    background-color: #095775;
+    flex: 0;    
+    margin: auto;    /* font-size: 300%; */
+    /* height: 300%; */
+    /* text-align: center;
+    justify-content: center; */
+    width: 35%;
+}
+.signin{
+     text-align: start;
+    justify-content: right;
+}
+h1{
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+
+}
